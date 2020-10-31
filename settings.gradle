@@ -1,0 +1,3 @@
+include ':shelftabs'
+include ':app'
+rootProject.name = "ShelfTabsSample"

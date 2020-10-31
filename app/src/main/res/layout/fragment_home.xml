@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"
+            android:layout_alignRight="@id/tvTitle"
+            android:layout_alignBottom="@id/tvTitle"
+            android:background="#64e4f2" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slide bar right"
+            android:textColor="#343434"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitle"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fafafa">
+
+            <io.github.kamaravichow.shelftabs.VerticalTabLayout
+                android:id="@+id/verticalTabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                app:indicator_color="#64e4f2"
+                app:indicator_gravity="right"
+                app:tab_height="@dimen/dp55"
+                app:tab_mode="scrollable" />
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpAllTags"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </LinearLayout>
+</RelativeLayout>
