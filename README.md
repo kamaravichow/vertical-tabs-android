@@ -5,8 +5,8 @@
  
  ## Implementation
  ```gradle
- dependencies {
-	        implementation 'com.github.kamaravichow:shelf-tabs-android:1.0'
+dependencies {
+	        implementation 'com.github.kamaravichow:vertical-tabs-android:1.0.0'
 	}
  ```
  
