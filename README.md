@@ -1,5 +1,5 @@
-# Shelf Tabs
- Android lib for verticle tab bar
+# Vertical Tabs Android
+ Android lib for verticle tab bar like in MI Store app
  
  ---
  
